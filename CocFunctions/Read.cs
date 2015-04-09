@@ -26,7 +26,7 @@ namespace CocFunctions
             List<string> allNumber = new List<string>();
             for (int i = 0; i <= 9; i++)
             {
-                List<Point> recup = GetDifference(sourceImage, dicoResString[i.ToString()], 100);
+                List<Point> recup = GetDifference(sourceImage, dicoResString[i.ToString()], 110);
                 foreach (Point point in recup)
                 {
                     allNumber.Add(point.X + ";" + i.ToString());
@@ -63,7 +63,7 @@ namespace CocFunctions
             List<string> allNumber = new List<string>();
             for (int i = 0; i <= 9; i++)
             {
-                List<Point> recup = GetDifference(sourceImage, dicoResString[i.ToString()], 100);
+                List<Point> recup = GetDifference(sourceImage, dicoResString[i.ToString()], 175);
                 foreach (Point point in recup)
                 {
                     allNumber.Add(point.X + ";" + i.ToString());
@@ -115,7 +115,7 @@ namespace CocFunctions
                     if (diff < maxDiff)
                     {
                         points.Add(new Point(x, y));
-                        x += 5;
+                        x += 4;
                         break;
                     }
                     
