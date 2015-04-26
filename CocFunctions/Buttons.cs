@@ -57,7 +57,7 @@ namespace CocFunctions
                 case "troop9": //Button train P.E.K.K.A
                     return new Point(640 + xDif, 450 + yDif);
                 case "troop_ready":
-                    return new Point(165 + xDif, 530 + yDif);
+                    return new Point(140 + xDif, 520 + yDif);
 
 
                 default:
